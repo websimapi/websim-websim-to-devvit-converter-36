@@ -1,7 +1,7 @@
 export * from './templates/config.js';
 export * from './templates/app.js';
 // getServerIndexJs is exported by * above
-export * from './templates/polyfills.js';
+export * from './templates/polyfills/index.js';
 // webAudioPolyfill is exported by * above
 // Export websimPackageJs is handled by * export
 export * from './templates/scripts.js';
