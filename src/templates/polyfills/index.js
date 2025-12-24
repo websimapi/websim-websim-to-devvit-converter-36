@@ -1,5 +1,5 @@
-export * from './logger.js';
-export * from './audio.js';
-export * from './socket.js';
-export * from './stubs.js';
-export * from './misc.js';
+export { simpleLoggerJs } from './logger.js';
+export { webAudioPolyfill } from './audio.js';
+export { websimSocketPolyfill } from './socket.js';
+export { websimStubsJs } from './stubs.js';
+export { jsxDevProxy, websimPackageJs, avatarInjector } from './misc.js';

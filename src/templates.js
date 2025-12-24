@@ -1,19 +1,24 @@
-export * from './templates/config.js';
-export * from './templates/app.js';
-// getServerIndexJs is exported by * above
-export * from './templates/polyfills/index.js';
-// webAudioPolyfill is exported by * above
-// Export websimPackageJs is handled by * export
-export * from './templates/scripts.js';
-export * from './templates/docs.js';
+export { 
+    generatePackageJson, 
+    generateDevvitJson, 
+    generateClientViteConfig, 
+    generateServerViteConfig, 
+    tsConfig 
+} from './templates/config.js';
 
-// removed generatePackageJson(slug)
-// removed generateDevvitJson(slug)
-// removed tsConfig
-// removed getMainTsx(title, webviewPath)
-// removed simpleLoggerJs
-// removed websimSocketPolyfill
-// removed validateScript
-// removed setupScript
-// removed generateReadme(title, url)
+export { getMainTs } from './templates/app.js';
+
+export { 
+    simpleLoggerJs, 
+    webAudioPolyfill, 
+    websimSocketPolyfill, 
+    websimStubsJs, 
+    jsxDevProxy, 
+    websimPackageJs, 
+    avatarInjector 
+} from './templates/polyfills/index.js';
+
+export { validateScript, setupScript } from './templates/scripts.js';
+
+export { generateReadme } from './templates/docs.js';
 
